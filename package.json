@@ -1,0 +1,13 @@
+{
+  "name": "rebuslucca-mynameme",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Vetrina RebusLucca per mynameme.com — sito statico per Netlify",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/site.test.mjs",
+    "preview": "node scripts/preview.mjs"
+  }
+}
