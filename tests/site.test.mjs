@@ -20,9 +20,9 @@ test('the catalog links to the published Lucca app and introduces the upcoming M
  assert.match(milano, /In arrivo/);
  assert.doesNotMatch(milano, /apps\.apple\.com/);
 });
-for(const name of pages)test(name+': internal links, IDs, metadata, light theme and footer',()=>{
+for(const name of pages)test(name+': internal links, IDs, metadata, light and dark themes and footer',()=>{
  const html=readPage(name);
- assert.match(html,/<html lang="it">/);assert.match(html,/name="color-scheme" content="light"/);
+ assert.match(html,/<html lang="it">/);assert.match(html,/name="color-scheme" content="dark light"/);
  assert.match(html,/Made with <span class="footer-heart">&lt;3<\/span> by Damiano Dell'Amore/);
  assert.match(html,/<link rel="icon"[^>]*href="\/assets\/favicon.png"/);
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length);
@@ -35,10 +35,11 @@ for(const name of pages)test(name+': internal links, IDs, metadata, light theme 
   if(fragment)assert(fs.readFileSync(file,'utf8').includes('id="'+fragment+'"'),name+': missing anchor '+url);
  }
 });
-test('production pages only use script tags for structured data', () => {
+test('production pages only load the local theme script and structured data', () => {
  for (const name of pages) {
   const html = readPage(name);
-  assert.doesNotMatch(html, /<script\b(?! type="application\/ld\+json">)|<iframe\b/i);
+  assert.match(html, /<script src="\/assets\/theme\.js"><\/script>/);
+  assert.doesNotMatch(html, /<script\b(?! type="application\/ld\+json">| src="\/assets\/theme\.js"><\/script>)|<iframe\b/i);
  }
 });
 test('favicon is the unchanged app icon asset',()=>{

@@ -26,22 +26,22 @@
   overflow:hidden;
   display:flex;
   flex-direction:column;
-  background:var(--white);
+  background:var(--surface);
   border:1px solid var(--line);
   border-radius:22px;
   box-shadow:0 14px 30px #0c315308;
   --banner-dark:#0f3657;
   --banner-light:#176c88;
   --route:#88e1f1;
-  --status:#226343;
-  --status-bg:#ecf8f0;
+  --status:var(--status-live);
+  --status-bg:var(--status-live-bg);
 }
 .app-card-milano {
   --banner-dark:#391e3e;
   --banner-light:#75466f;
   --route:#f4b5df;
-  --status:#654366;
-  --status-bg:#f6edf7;
+  --status:var(--status-upcoming);
+  --status-bg:var(--status-upcoming-bg);
 }
 .app-banner {
   position:relative;
