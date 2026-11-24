@@ -1,10 +1,10 @@
 # Fonti e criteri dei contenuti
 
-Ultima verifica: 7 novembre 2026.
+Ultimo aggiornamento · 24 novembre 2026
 
-L’icona, le funzioni descritte, la gestione dei preferiti, la localizzazione, gli avvisi vocali e i limiti dei dati derivano dal progetto iOS RebusLucca consegnato separatamente. La vetrina non offre un pianificatore online e non scarica un GTFS.
+L’icona, le funzioni, la localizzazione e gli avvisi vocali derivano dal progetto iOS ReBusLucca. Il progetto iOS 1.1 descrive il controllo degli aggiornamenti via Wi-Fi e l’applicazione dei dati al successivo avvio dell’app.
 
-La data di lancio deriva dalla richiesta di Damiano: 11 novembre. È stato impostato l’anno 2026 e l’orario 00:00 in Italia. La pubblicazione effettiva dipende dal rilascio dell’app e non viene dedotta dalla data.
+Il catalogo conserva il collegamento App Store di ReBusLucca già presente nel sito. ReBusMilano è annunciata come in arrivo.
 
 Per cartografia e privacy dei fornitori:
 

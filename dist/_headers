@@ -5,5 +5,3 @@
   X-Frame-Options: SAMEORIGIN
 /assets/*
   Cache-Control: public, max-age=3600
-/assets/site-config.js
-  Cache-Control: public, max-age=0, must-revalidate
