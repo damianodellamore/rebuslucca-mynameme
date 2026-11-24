@@ -63,7 +63,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
 }
 .site-header {
   height:96px;
-  background:transparent;
+  color:var(--ink);
+  background:var(--header-surface);
   border-bottom:1px solid var(--line);
 }
 .nav-inner {
@@ -235,8 +236,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
   margin-top:6px;
 }
 .hero-visual {
-  color:#0c3153;
-  --blue:#087fa9;
+  color:var(--ink);
   position:relative;
   display:flex;
   flex-direction:column;
@@ -245,7 +245,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
   min-width:0;
   padding:32px 0 28px;
   border-radius:38px;
-  background:linear-gradient(145deg,#eaf8fc,#d4eff8);
+  background:linear-gradient(145deg,var(--preview-start),var(--preview-end));
   isolation:isolate;
 }
 .visual-orbit {
@@ -263,12 +263,12 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
   font-size:8px;
   font-weight:650;
   letter-spacing:1.7px;
-  color:#477f98;
+  color:var(--muted);
   margin:0 0 24px;
 }
 .phone {
   width:290px;
-  background:#f7fbfd;
+  background:var(--surface);
   border:7px solid #163a53;
   border-radius:43px;
   box-shadow:0 25px 44px -23px #0e406d60,0 0 0 1px #2e536d,0 0 0 4px #ffffff70;
@@ -312,8 +312,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
 .phone-search {
   position:relative;
   margin:2px 13px 0;
-  background:#fff;
-  border:1px solid #d3e3ed;
+  background:var(--surface);
+  border:1px solid var(--line);
   border-radius:14px;
   box-shadow:0 4px 14px #0c315307;
   z-index:2;
@@ -323,13 +323,13 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
   padding:9px 12px 9px 31px;
 }
 .phone-search>div+div {
-  border-top:1px solid #edf2f6;
+  border-top:1px solid var(--line);
 }
 .phone-search small {
   display:block;
   font-size:8px;
   line-height:1.2;
-  color:#8097a6;
+  color:var(--muted);
 }
 .phone-search strong {
   display:block;
@@ -357,8 +357,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
   right:10px;
   top:32px;
   z-index:3;
-  background:#f8fcff;
-  border:1px solid #d4e4ed;
+  background:var(--surface);
+  border:1px solid var(--line);
   border-radius:6px;
   padding:0 6px;
   font-size:17px;
@@ -376,9 +376,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
 .phone-selection {
   margin:-11px 13px 12px;
   position:relative;
-  background:#fff;
+  background:var(--surface);
   border-radius:12px;
-  border:1px solid #d6e6ee;
+  border:1px solid var(--line);
   padding:13px 10px;
   display:flex;
   align-items:center;
@@ -387,7 +387,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
 }
 .phone-selection small {
   font-size:8px;
-  color:#7f96a3;
+  color:var(--muted);
   display:block;
   line-height:1.3;
 }
@@ -428,8 +428,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
   line-height:1.3;
 }
 .phone-tabs .selected {
-  background:#78dff3;
-  color:#123958;
+  background:var(--tab-selected);
+  color:var(--ink);
 }
 .phone-tabs svg {
   width:13px;
@@ -447,8 +447,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
   left:-23px;
   top:62%;
   z-index:2;
-  background:#fffffff7;
-  border:1px solid #d7e9f2;
+  background:var(--surface);
+  border:1px solid var(--line);
   box-shadow:0 8px 28px #143e5b0c;
   padding:14px 19px;
   border-radius:15px;
@@ -471,7 +471,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible {
   font-size:9px;
   line-height:1.5;
   text-align:center;
-  color:#5f8ba1;
+  color:var(--muted);
   margin-top:24px;
   position:relative;
   z-index:2;

@@ -28,7 +28,8 @@ for(const name of pages)test(name+': internal links, IDs, metadata, light and da
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);assert.equal(new Set(ids).size,ids.length);
  for(const [,url]of html.matchAll(/\b(?:href|src)="([^"]+)"/g)){
   if(/^(?:https?:|mailto:)/.test(url))continue;
-  const [pathname,fragment]=url.split('#');
+  const {pathname, hash} = new URL(url, 'https://mynameme.com/' + name);
+  const fragment = hash.slice(1);
   let file=pathname?path.join(root,pathname):path.join(root,name);
   if(fs.existsSync(file)&&fs.statSync(file).isDirectory())file=path.join(file,'index.html');
   assert(fs.existsSync(file),name+': missing '+url);
